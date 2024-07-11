@@ -32,14 +32,14 @@ export class HomePage {
 
     async successfulLogin(){
         await this.loginBtn.click();
-        await this.usernameL.fill("Mohamed11001");
+        await this.usernameL.fill("Mohamed1100112334545666");
         await this.passwordL.fill("12345");
         await this.submitLoginBtn.click();
     }
 
     async register(){
         await this.registerBtn.click();
-        await this.usernameR.fill("Mohamed11001");
+        await this.usernameR.fill("Mohamed1100112334545666");
         await this.passwordR.fill("12345");
         await this.submitRegisterBtn.click();
     }

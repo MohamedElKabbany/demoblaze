@@ -14,6 +14,8 @@ This project contains automated test scripts using Playwright with TypeScript fo
 
 ### Running the Tests
 
+Please change the username located in homepage.ts that you register and login with as it cannot be duplicate
+
 To run all tests:
 
 npx playwright test

@@ -11,12 +11,15 @@ test('Successful Registration', async ({ page }) => {
     const homePage = new HomePage(page);
 
   page.on('dialog', async dialog => {
-    console.log(`Dialog message: ${dialog.message()}`);
+    //console.log(`Dialog message: ${dialog.message()}`);
+    const alertMessage = dialog.message();
+    expect(alertMessage).toBe('Sign up successful.');
     await dialog.accept();
 });
 
   await homePage.register();
   await page.waitForTimeout(2000);
+  
 
 });
 
